@@ -1,0 +1,695 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+
+    width: 100%;
+    height: 800px;
+    background-image: url("images/header.jpg");
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Inconsolata', monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+header p{
+    padding-top: 100px;
+    margin-top: -40px;
+    font-weight: bold;
+}
+
+.header_nav{
+    margin: 60px auto;
+}
+.header_nav li{
+    display: inline;
+    list-style-type: none;
+    margin: 40px;
+    font-size: 30px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+a:hover{
+    color: #814242;
+}
+
+/* бургер */
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+ 
+.container{
+    display: none;
+}
+/* конец бургера */
+
+
+.fiveReasons{
+    margin: 100px auto;
+    
+}
+
+.fiveReasons h3{
+    text-align: center;
+    font-size: 30px;
+    padding: 100px auto;
+}
+
+.fiveReasons_accordion{
+    text-align: center;
+}
+
+
+/* accordeon */
+/* Стиль кнопок, которые используются для открытия и закрытия панели аккордеона */
+.accordion {
+    background-color: #e2e1e5;
+    color: #444;
+    width: 60%;
+    cursor: pointer;
+    padding: 18px ;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  /* Добавить цвет фона для кнопки, если она нажата (добавить .активный класс с JS), а при наведении на него курсора мыши (наведите курсор) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Стиль аккордеон панели. Примечание: скрыто по умолчанию */
+  .panel {
+    padding: 0 18px;
+    margin: 10px auto;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 60%;
+  }
+  
+/* конец аккордеона */
+
+
+.header_img-schooll{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    background: #e2e1e5;
+}
+.content_nabor{
+    /*height: 600px;*/
+    padding-left: 130px;
+    position: relative;
+
+}
+.content_nabor h1{
+    font-size: 30px;
+}
+.nabor_text{
+   position: absolute;
+    text-align: center;
+}
+.content_nabor_img{
+    float: left;
+    width: 100%;
+
+}
+.content_rasp{
+    padding: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 2;
+    width: 25%;
+
+}
+.otdelenie{
+    padding-left: 50px;
+    /* width: 18%; */
+}
+.otdelenie_h2{
+    padding-left: 50px;
+}
+.otdelenie li{
+    border-bottom: solid 1px lightgray;
+    list-style-type: none;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+/*form*/
+
+.form{
+    line-height: 15px;
+    /* background-color: #e1e8e6; */
+    padding: 5% 30%;
+}
+.big{
+    width: 1000px;
+}
+.small{
+    display: none;
+}
+input[type="text"]:focus, textarea:focus{
+     outline: none; 
+    }
+
+.border{
+    border: 1px solid #aaadac;
+    border-radius: 20px;
+}
+.borderBig{
+    border: 1px solid #aaadac;
+    border-radius: 30px;
+}
+.form p, input, option{
+    font-size: 20px;
+}
+.name{
+    margin-left: 50px;
+    width: 500px;
+}
+.birthday{
+    margin-left: 92px;
+}
+.heading{
+    margin-left: 135px;
+}
+.instrument{
+    width: 150px;
+    margin-left: 125px;
+}
+.yes{
+    margin-left: 35px;
+}
+.comment{
+    margin-top: 20px;
+}
+.button{
+    border: none;
+    background-color: #e2e1e5;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 350px;
+
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #aaadac;
+}
+
+
+
+
+/* достижения */
+
+.victory{
+    padding: 80px;
+    background: #e2e1e5;
+    text-align: center;
+    font-size: 30px;
+    height: 1000px;
+    
+}
+
+.victory_gorizont{
+    width: 30%;
+    height: 25%;
+    padding: 20px;
+    float: left;
+}
+
+.victory_vertical{
+    width: 20%;
+    height: 25%;
+    padding: 30px;
+    float: left;
+}
+
+/* конец достижения */
+
+
+/* footer */
+
+footer{
+    background:black;
+    padding: 100px;
+}
+
+.end{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    color: white;
+    /* background-color: #212327; */
+   
+}
+.footer{
+    width: 25%;
+    text-align: left;
+    margin-right: 100px;
+ 
+}
+.qx-media{
+    display: flex;
+    flex-direction: row;
+}
+.qx-media_right{
+    margin-top: 0;
+}
+.qx-media_right a{
+    color: white;
+}
+.qx-media_left{
+    padding-right: 10px;
+}
+
+.footer-two a{
+    color: white;
+}
+.footer-two a:hover{
+    color: rgb(207, 204, 204);
+}
+
+/* input */
+.footer-three_input{
+    position: relative;
+    margin-bottom: 100px;
+}
+.footer-three_input1{
+    width: 200px;
+    height: 35px;
+    border: 1px solid white;
+    border-right: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+.footer-three_input2{
+    width: 40px;
+    height: 35px;
+    border: 1px solid white;
+    border-left: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 62px;
+    left: 195px;
+    cursor: pointer;
+
+}
+.in-input{
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.footer-three_insta{
+    color: white;
+    padding: 15px 10px;
+   
+}
+.footer-three_insta:hover{
+    color:rgb(207, 204, 204);
+}
+
+/* конец footer */
+
+@media all and (max-width:800px){
+    header{
+        height: 600px;
+        font-size: 30px;   
+    }
+
+    .header_nav{
+        display: none;
+    }
+    .container{
+        display: inline-block;
+    }
+    .show{
+        display: block;
+    }
+
+    .fiveReasons h3{
+        font-size: 20px;
+    }
+    .accordion {
+        width: 80%;
+        font-size: 15px;
+      }
+      .panel {
+        width: 80%;
+      }
+      .content{
+        flex-direction: column;
+    }
+    .content_nabor{
+        /*height: 600px;*/
+        padding-left: 50px;
+        position: relative;
+    
+    }
+    .content_nabor h1{
+        font-size: 30px;
+    }
+    .nabor_text{
+       position: absolute;
+        text-align: center;
+    }
+    .content_nabor_img{
+        float: left;
+        width: 100%;
+    
+    }
+    .content_rasp{
+        width: 100%;
+    }
+    .otdelenie{
+        padding-left: 20px;
+        width: 60%;
+    }
+    .otdelenie_h2{
+        padding-left: 50px;
+    }
+    .otdelenie li{
+        border-bottom: solid 1px lightgray;
+        list-style-type: none;
+        padding: 15px;
+        font-size: 20px;
+        text-decoration: none;
+    
+    }
+    
+
+    .form{
+        line-height: 33px;
+        padding: 20px;
+        /* width: 90%; */
+    }
+    .big{
+        display: none;
+    }
+    .small{
+        display: block;
+        margin: 4px auto;
+        width: 80%;
+    }
+    .form p, input{
+        font-size: 20px;
+    }
+    input[type="text"]:focus, textarea:focus{
+        outline: none; 
+       }
+
+    .button{
+        font-size: 18px;
+      margin-left: 300px;
+    }
+
+
+    .victory{
+        height: 4400px;
+    }
+    
+    .victory_gorizont{
+        width: 80%;
+    }
+    
+    .victory_vertical{
+        width: 80%;   
+    }
+
+
+    footer{
+        background:black;
+        padding: 100px;
+    }
+    
+    .end{ 
+        flex-direction: column;
+    }
+    .footer{
+        width: 90%;
+    }
+    
+
+
+}
+
+
+
+/* страница 2-  О нас*/
+.school, .fortepiano{
+    font-family: 'Inconsolata', monospace;
+    font-size: 35px;
+    text-align: center;
+}
+.school_director{
+    text-align: left;
+    padding: 50px;
+    float: left;
+
+}
+.school_director h5{
+    padding: 0;
+    margin: 0;
+}
+.school p{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    text-indent: 1.5em;
+}
+
+.school_content{
+    width: 90%;
+    margin: 30px auto;
+}
+/* конец страница 2- О нас */
+
+
+
+/*страница 3- отделения*/
+.gallery,.hor, .sn, .nar{
+    text-align: center;
+    margin-top: 30px;
+}
+.gallery h2{
+    margin: 50px;
+    font-size: 25px;
+}
+.gallery p{
+    font-size: 15px;
+
+}
+
+.fortepiano_row, .hor_row, .sn_row, .nar_row{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    text-align: left;
+    margin: 30px auto;
+    padding-bottom: 100px;
+
+}
+.fortepiano_col, .hor_col, .sn_col, .nar_col{
+    display: flex;
+    flex-direction: column;
+    border: 25px solid white;
+    margin: 0 10px;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+.fortepiano_col p, .hor_col p, .sn_col p, .nar_col p{
+    margin: 5px;
+    padding-top: 15px;
+}
+.fortepiano_1{
+    height: 350px;
+    background-image: url("images/fortepiano_1.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+ 
+}
+.fortepiano_1:hover, .fortepiano_2:hover, .fortepiano_3:hover{
+    transform: scale(1.1);
+}
+.fortepiano_2{
+    height: 350px;
+    background-image: url("images/fortepiano_2.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.fortepiano_3{
+    height: 350px;
+    background-image: url("images/fortepiano_3.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+
+
+
+.hor_1{
+    height: 350px;
+    background-image: url("images/hor_1.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.hor_2{
+    height: 350px;
+    background-image: url("images/hor_2.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.hor_3{
+    height: 350px;
+    background-image: url("images/hor_3.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+
+.nar_1{
+    height: 350px;
+    background-image: url("images/nar1.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.nar_2{
+    height: 350px;
+    background-image: url("images/nar2.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.nar_3{
+    height: 350px;
+    background-image: url("images/nar3.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+
+
+.sn_1{
+    height: 350px;
+    background-image: url("images/sn1.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.sn_2{
+    height: 350px;
+    background-image: url("images/sn2.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+.sn_3{
+    height: 350px;
+    background-image: url("images/sn3.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    transition: all 1s ease-out;
+}
+
+
+
+@media all and (max-width:800px){
+    .header-small{
+        display: none;
+    }
+    .fortepiano_row, .hor_row, .sn_row, .nar_row{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        text-align: left;
+        margin: 30px auto;
+        padding-bottom: 100px;
+    }
+    .fortepiano_col, .hor_col, .sn_col, .nar_col{
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+/* .sn_row{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    text-align: left;
+    align-items: center;
+    margin: 30px auto;
+    padding-bottom: 100px;
+}
+.sn_col{
+    width: 20%;
+    height: 20%;
+    border: 5px solid #515151;
+}
+.sn1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+} */
+
+
+/* конец страница 3- отделения */
